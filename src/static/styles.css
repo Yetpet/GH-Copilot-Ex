@@ -96,7 +96,7 @@ section h3 {
   gap: 8px;
 }
 
-.participants-list li {
+.participants-list .participant-item {
   background: linear-gradient(180deg, #eaf1ff 0%, #dbe8ff 100%);
   color: #0d47a1;
   padding: 6px 10px;
@@ -104,6 +104,33 @@ section h3 {
   font-size: 13px;
   border: 1px solid #cfdffe;
   box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #666;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.6;
+  line-height: 1;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.delete-participant:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: #d32f2f;
+  opacity: 1;
 }
 
 /* Empty state for participants */
